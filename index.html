@@ -8,37 +8,36 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <script src="scripts/script.js"></script>
     <form class="interfaz">
         <h1>Conversor de Divisas</h1>
-
         <div class="contenedor">
             <div class="input-contenedor">
                 <input type="text" id="inputCantidad" placeholder="Cantidad de Dinero">
             </div>
-            <label>De:</label>
-            <select  id="divisa1">
-                <option value="1" class="option">Dolar</option>
-                <option value="2">Peso Mexicano</option>
-                <option value="3">Peso Colombiano</option>
-                <option value="4">Euro</option>
-                <option value="5">Libra Esterlina</option>
-            </select>
-            <label>A:</label>
-            <select  id="divisa2">
-                <option value="1">Dolar</option>
-                <option value="2">Peso Mexicano</option>
-                <option value="3">Peso Colombiano</option>
-                <option value="4">Euro</option>
-                <option value="5">Libra Esterlina</option>
-            </select>
-            <input type="submit" value="Convertir" class="button" onclick="Convertir()">
+            <div class="option">
+                <label>De:</label>
+                    <select  id="divisa1" >
+                    <option value="1">Dolar</option>
+                    <option value="2">Peso Mexicano</option>
+                    <option value="3">Peso Colombiano</option>
+                    <option value="4">Euro</option>
+                    <option value="5">Libra Esterlina</option>
+                    </select>
+                <label>A:</label>
+                    <select  id="divisa2" >
+                    <option value="1">Dolar</option>
+                    <option value="2">Peso Mexicano</option>
+                    <option value="3">Peso Colombiano</option>
+                    <option value="4">Euro</option>
+                    <option value="5">Libra Esterlina</option>
+                    </select>
+        </div>
         </div>
         <div class="input-display">
             <input id="input" type="text" readonly>
         </div>
-        
-
     </form>
+    <button id="btnConvertir" class="button">Convertir</button>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
